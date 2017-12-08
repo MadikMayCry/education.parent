@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>JavaEE </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+    <nav id="slide-out" class="slide-out">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/" class="breadcrumb "><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href=/register class="breadcrumb ">Register</a>
+                </li>
+                <li>
+                    <a href="/login" class="breadcrumb ">Login</a>
+                </li>
+
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a href="/" class="breadcrumb "><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href=/register class="breadcrumb ">Register</a>
+                </li>
+                <li>
+                    <a href="/login" class="breadcrumb ">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<main ui-view class="main">
+    <h2>HERE</h2>
+    <!-- Here dynamic part of our site -->
+
+</main>
+
+<script src="js/scripts-lib.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

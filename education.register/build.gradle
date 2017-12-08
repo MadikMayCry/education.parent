@@ -1,0 +1,12 @@
+dependencies {
+    compile project(':education.controller')
+
+    compile "kz.greetgo.mvc:greetgo.mvc:$greetgoMvcVersion"
+    compile "kz.greetgo:greetgo.email:$greetGoEmailVersion"
+
+    compile "kz.greetgo.mvc:greetgo.mvc.jetty:$greetgoMvcVersion"
+    compile group: 'org.json', name: 'json', version: '20160810'
+    compile "com.google.guava:guava:$guavaVersion"
+
+    testCompile "kz.greetgo.depinject:greetgo.depinject.testng:$greetgoDepInjectVersion"
+}

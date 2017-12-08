@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div id="register" class="col s6">
+        <form class="col s12">
+            <div class="form-container">
+                <div class="row">
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="first_name" ng-model="selectedName">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="last_name" ng-model="selectedSurname">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="email" ng-model="selectedEmail">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="birth-date" ng-model="selectedBirthDate">
+                        <label for="birth-date">Birth Date</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="phone" ng-model="selectedTelephone">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="input-field col m6 s12">
+                        <input type="text" id="address" ng-model="selectedAddress">
+                        <label for="address">Address</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col m6 s12">
+                        <input type="password" id="password" ng-model="selectedPassword">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+                <button  class="btn waves-effect waves-light red lighten-1 right"  ng-click="reg()">register</button>
+
+            </div>
+        </form>
+    </div>
+</div>

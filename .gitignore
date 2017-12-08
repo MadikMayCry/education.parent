@@ -1,0 +1,15 @@
+
+/.gradle/
+/.idea/
+/build/
+/education.client/.idea/
+/education.client/build/
+/education.client/dist/
+/education.client/node_modules/
+/education.controller/out/
+/education.register/build/
+/education.register/out/
+/education.stand/build/
+/education.stand/out/
+/education.parent.iws
+/education.controller/build/

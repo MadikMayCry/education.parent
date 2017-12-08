@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+
+
+        <div id="login" class="col s12">
+        <form class="col s12">
+            <div class="form-container">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fa fa-user prefix" aria-hidden="true"></i>
+                        <input type="text" ng-model="email">
+                        <label for="icon_prefix">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fa fa-eye prefix pointer" ng-class="{'fa-eye-slash': isActive}"  ng-click="hideShowPassword()" toggle="#password"></i>
+                        <input type="{{inputType}}" ng-model="password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <br>
+                <button class="btn waves-effect waves-light red lighten-1 right" type="submit" ng-click="loginUser()">login</button>
+                <button class="btn waves-effect waves-light" ng-click="change('register')">REGISTRATION</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

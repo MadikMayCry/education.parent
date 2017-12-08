@@ -1,0 +1,43 @@
+
+<div class="container users">
+    <div class="col s12">
+        <button class="btn" ng-click="add()">Add</button>
+        <button class="btn" ng-click="edit()"  value="Edit" ng-disabled="disButtons">Edit</button>
+        <button class="btn" ng-click="delete(mainSelectedId)" ng-disabled="disButtons">Delete</button>
+    </div>
+    <table class="striped">
+        <tr>
+            <p></p>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>BirthDate</th>
+            <th>Email</th>
+            <th>Telephone</th>
+            <th>Address</th>
+            <th>Password</th>
+            <th>Id</th>
+        </tr>
+        <tr ng-repeat="n in data" class="line">
+            <td ng-click="myFunc(n.id)">{{n.name}}</td>
+            <td ng-click="myFunc(n.id)">{{n.surname}}</td>
+            <td ng-click="myFunc(n.id)">{{n.birthDate}}</td>
+            <td ng-click="myFunc(n.id)">{{n.email}}</td>
+            <td ng-click="myFunc(n.id)">{{n.telephone}}</td>
+            <td ng-click="myFunc(n.id)">{{n.address}}</td>
+            <td ng-click="myFunc(n.password)">{{n.password}}</td>
+            <td ng-click="myFunc(n.id)">{{n.id}}</td>
+        </tr>
+        <tr>
+            <td><input type="text" ng-model="selectedName"></td>
+            <td><input type="text" ng-model="selectedSurname"></td>
+            <td><input type="text" ng-model="selectedBirthDate"></td>
+            <td><input type="text" ng-model="selectedEmail"></td>
+            <td><input type="text" ng-model="selectedTelephone"></td>
+            <td><input type="text" ng-model="selectedAddress"></td>
+            <td><input type="text" ng-model="selectedPassword"></td>
+            <td>{{mainSelectedId}}</td>
+        </tr>
+    </table>
+
+
+</div>
